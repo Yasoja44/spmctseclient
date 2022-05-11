@@ -58,7 +58,7 @@ class showWorkoutChosen extends Component {
 
     componentDidMount() {
 
-        axios.get(`http://localhost:5000/workout/chosen/${this.props.match.params.id}`)
+        axios.get(`/workout/chosen/${this.props.match.params.id}`)
             .then(response => {
                 this.setState({
                     workouts: response.data.data

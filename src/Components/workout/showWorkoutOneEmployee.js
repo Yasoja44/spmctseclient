@@ -44,7 +44,7 @@ class showWorkoutOneEmployee extends Component {
 
     componentDidMount() {
 
-        axios.get(`http://localhost:5000/workout/${this.props.match.params.id}`)
+        axios.get(`/workout/${this.props.match.params.id}`)
             .then(response => {
                 this.setState({
                     id: response.data.data._id,

@@ -31,7 +31,7 @@ class showWorkoutEmployee extends Component {
 
     componentDidMount() {
 
-        axios.get(`http://localhost:5000/workout/creator/41224d776a326fb40f000001`)
+        axios.get(`/workout/creator/41224d776a326fb40f000001`)
             .then(response => {
                     this.setState({ Workouts: response.data.data });
                     console.log(response.data.data);

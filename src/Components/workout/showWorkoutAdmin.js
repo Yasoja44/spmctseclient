@@ -13,7 +13,7 @@ class showWorkoutAdmin extends Component {
 
     componentDidMount() {
 
-        axios.get(`http://localhost:5000/workout/`)
+        axios.get(`/workout/`)
             .then(response => {
                 this.setState({ Workouts: response.data.data });
                 console.log(response.data.data);

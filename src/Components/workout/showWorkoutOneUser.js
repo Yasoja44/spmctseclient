@@ -38,7 +38,7 @@ class showWorkoutOneUser extends Component {
         //         });
         //     })
 
-        axios.get(`http://localhost:5000/workoutUser/user/${this.props.match.params.id}`)
+        axios.get(`/workoutUser/user/${this.props.match.params.id}`)
             .then(response => {
                 let d = new Date(response.data.data[0].createdAt);
                 let newDate = new Date(d.setMonth(d.getMonth()+8));
