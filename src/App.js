@@ -19,10 +19,9 @@ function App() {
         <Router>
           <section>
             <Switch>
-              <Route path="/" component={Workout}  />
+              <Route path="/workout" component={Workout}  />
               <Route path="/question" component={Questionnaire}  />
               <Route path="/show" component={Show}  />
-
               <Route path="/workoutEmployeeShow" component={WorkoutEmployeeShow}  />
               <Route path="/workoutUpdate/:id" component={UpdateWorkout}  />
               <Route path="/workoutAdminShow" component={WorkoutAdminShow}  />
