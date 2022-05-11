@@ -19,7 +19,7 @@ function App() {
         <Router>
           <section>
             <Switch>
-              <Route path="/workout" component={Workout}  />
+              <Route path="/" component={Workout}  />
               <Route path="/question" component={Questionnaire}  />
               <Route path="/show" component={Show}  />
 
