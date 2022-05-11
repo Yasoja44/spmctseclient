@@ -69,7 +69,7 @@ class addWorkout extends Component {
             workout_level:this.state.workout_level
         };
         console.log('DATA TO SEND', workout)
-        axios.post('http://localhost:5000/workout/',workout)
+        axios.post('/workout/',workout)
             .then(response => {
                 SubmissionAlert();
 
